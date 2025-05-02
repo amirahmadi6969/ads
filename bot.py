@@ -16,17 +16,13 @@ ABOUT_TEXT = """✨ سلام رفیق! 👋
 
 def get_main_keyboard():
     keyboard = [
-        [InlineKeyboardButton("🧠 دانستنی باحال", callback_data='get_fact')],
-        [InlineKeyboardButton("📖 داستان کوتاه", callback_data='get_fact_2')],
-        [InlineKeyboardButton("🎬 دیالوگ ماندگار", callback_data='get_fact_3')],
-        [InlineKeyboardButton("📜 فال حافظ (تصادفی)", callback_data='fal')],
-        [InlineKeyboardButton("🤣 بخندیم؟ (جوک)", callback_data='jok')],
-        [InlineKeyboardButton("📝 شعر از سعدی", callback_data='sa')],
-        [InlineKeyboardButton("📅 مناسبت امروز", callback_data='mo')],
-        [InlineKeyboardButton("📌 بیو کانال", callback_data='bi')],
-        [InlineKeyboardButton("🧩 چیستان باحال", callback_data='chi')],
-        [InlineKeyboardButton("💬 حدیث از بزرگان", callback_data='ha')]
+    [InlineKeyboardButton("🧠 دانستنی باحال", callback_data='get_fact'), InlineKeyboardButton("📖 داستان کوتاه", callback_data='get_fact_2')],
+    [InlineKeyboardButton("🎬 دیالوگ ماندگار", callback_data='get_fact_3'), InlineKeyboardButton("📜 فال حافظ (تصادفی)", callback_data='fal')],
+    [InlineKeyboardButton("🤣 بخندیم؟ (جوک)", callback_data='jok'), InlineKeyboardButton("📝 شعر از سعدی", callback_data='sa')],
+    [InlineKeyboardButton("📅 مناسبت امروز", callback_data='mo'), InlineKeyboardButton("📌 بیو کانال", callback_data='bi')],
+    [InlineKeyboardButton("🧩 چیستان باحال", callback_data='chi'), InlineKeyboardButton("💬 حدیث از بزرگان", callback_data='ha')]
     ]
+
     return InlineKeyboardMarkup(keyboard)
 
 
